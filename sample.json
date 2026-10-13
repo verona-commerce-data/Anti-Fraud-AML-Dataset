@@ -1,0 +1,52 @@
+{
+  "CLI_PE_200001": {
+    "client_metadata": {
+      "profile_type": "Standard_Saver",
+      "currency": "PEN",
+      "risk_level": "Low"
+    },
+    "transaction_history": [
+      {
+        "txn_id": "TXN_CLI_PE_200001_15_PAY",
+        "timestamp": "2026-10-15T09:00:00Z",
+        "channel": "Interbank_Clearing_CCE",
+        "amount_pen": 4500.00,
+        "resulting_balance_pen": 4500.00,
+        "aml_target_alert": false
+      },
+      {
+        "txn_id": "TXN_CLI_PE_200001_18_EXP",
+        "timestamp": "2026-10-18T14:20:15Z",
+        "channel": "Mobile_Wallet_Yape",
+        "amount_pen": 45.50,
+        "resulting_balance_pen": 4454.50,
+        "aml_target_alert": false
+      }
+    ]
+  },
+  "CLI_PE_200002": {
+    "client_metadata": {
+      "profile_type": "Tax_Evasion_SUNAT",
+      "currency": "PEN",
+      "risk_level": "Critical"
+    },
+    "transaction_history": [
+      {
+        "txn_id": "TXN_CLI_PE_200002_12_EVA_IN",
+        "timestamp": "2026-10-12T11:45:00Z",
+        "channel": "Over_The_Counter_Branch",
+        "amount_pen": 38500.00,
+        "resulting_balance_pen": 39200.00,
+        "aml_target_alert": true
+      },
+      {
+        "txn_id": "TXN_CLI_PE_200002_13_EVA_OUT",
+        "timestamp": "2026-10-13T16:22:00Z",
+        "channel": "Cashiers_Check",
+        "amount_pen": 12000.00,
+        "resulting_balance_pen": 27200.00,
+        "aml_target_alert": true
+      }
+    ]
+  }
+}
